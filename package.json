@@ -1,12 +1,17 @@
 {
 	"name": "vite-plugin-define-html",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"author": "McKayla Washburn <mckayla@hey.com>",
 	"description": "Like the define config option, but for your index.html",
 	"main": "target/main.js",
+	"repository": "https://github.com/partheseas/vite-plugin-define-html",
 	"files": [
 		"target/**"
+	],
+	"keywords": [
+		"vite",
+		"html"
 	],
 	"devDependencies": {
 		"@mckayla/eslint-plugin": "^0.1.10",
