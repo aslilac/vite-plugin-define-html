@@ -11,7 +11,8 @@
 	],
 	"keywords": [
 		"vite",
-		"html"
+		"html",
+		"html-template"
 	],
 	"devDependencies": {
 		"@mckayla/eslint-plugin": "^0.1.10",
