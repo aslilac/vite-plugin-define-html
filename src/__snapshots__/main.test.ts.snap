@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`plugin correctly handles spacing 1`] = `
+"
+1
+2
+3
+4
+5
+6
+7
+8
+"
+`;
+
+exports[`plugin correctly replaces undefined variables 1`] = `
+"
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type=\\"application/javascript\\">
+		(function(){
+			var s = document.createElement('script');
+			s.src = 'analytics.js?k=';
+			document.body.appendChild(s);
+		})();
+	</script>
+
+	<script>
+		config.init({
+			secret: ''
+		});
+	</script>
+</body>
+</html>
+"
+`;
+
+exports[`plugin correctly replaces variables 1`] = `
+"
+<!doctype html>
+<html>
+<head>
+	<title>App Title</title>
+</head>
+<body>
+	<script type=\\"application/javascript\\">
+		(function(){
+			var s = document.createElement('script');
+			s.src = 'analytics.js?k=analytics_key';
+			document.body.appendChild(s);
+		})();
+	</script>
+
+	<script>
+		config.init({
+			secret: \\"config_key\\"
+		});
+	</script>
+</body>
+</html>
+"
+`;

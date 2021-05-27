@@ -1,0 +1,30 @@
+{
+	"name": "vite-plugin-define-html",
+	"version": "1.0.0",
+	"license": "MIT",
+	"author": "McKayla Washburn <mckayla@hey.com>",
+	"description": "Like the define config option, but for your index.html",
+	"main": "target/main.js",
+	"files": [
+		"target/**"
+	],
+	"devDependencies": {
+		"@mckayla/eslint-plugin": "^0.1.10",
+		"@mckayla/prettier": "^0.8.90",
+		"@mckayla/tsconfig": "^0.41.0",
+		"@types/jest": "^26.0.23",
+		"eslint": "^7.27.0",
+		"jest": "^27.0.1",
+		"prettier": "^2.3.0",
+		"ts-jest": "^27.0.1",
+		"typescript": "^4.3.2",
+		"vite": "^2.3.4"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"fmt": "prettier --ignore-path .gitignore --write .",
+		"lint": "eslint src",
+		"prepare": "npm run build",
+		"test": "jest"
+	}
+}
